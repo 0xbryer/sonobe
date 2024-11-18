@@ -34,7 +34,7 @@ Work in progress:
 Frontends allow to define the circuit to be folded (ie. `FCircuit`).
 The recommended frontend is directly implementing the [`FCircuit` trait](https://github.com/privacy-scaling-explorations/sonobe/blob/main/folding-schemes/src/frontend/mod.rs#L16) with the Arkworks constraint system.
 
-Alternatively, experimental frontends for [Circom](https://github.com/iden3/circom), [Noir](https://github.com/noir-lang/noir) and [Noname](https://github.com/zksecurity/noname) can be found at the [sonobe/frontends](https://github.com/privacy-scaling-explorations/sonobe/tree/main/frontends) directory, which have some computational (and time) overhead.
+Alternatively, experimental frontends for [Circom](https://github.com/iden3/circom), [Noir](https://github.com/noir-lang/noir) and [Noname](https://github.com/zksecurity/noname) can be found at the [sonobe/experimental-frontends](https://github.com/privacy-scaling-explorations/sonobe/tree/main/experimental-frontends) directory, which have some computational (and time) overhead.
 
 More details about the frontend interface and the experimental frontends can be found at the [sonobe-docs/frontend](https://privacy-scaling-explorations.github.io/sonobe-docs/usage/frontend.html) page.
 
@@ -49,7 +49,7 @@ folding-schemes = { git = "https://github.com/privacy-scaling-explorations/sonob
 Available packages:
 - `folding-schemes`: main crate, contains the different scheme implementations, together with commitment schemes, frontend trait, arithmetization, transcript, etc.
 - `solidity-verifiers`: contains the templating logic to output the verifier contracts for the DeciderEth proofs. Currently only supports Nova+CycleFold DeciderEth proofs.
-- `frontends`: contains the experimental frontends other than the arkworks frontend. More details at the [sonobe/frontends](https://github.com/privacy-scaling-explorations/sonobe/tree/main/frontends) directory.
+- `experimental-frontends`: contains the experimental frontends other than the arkworks frontend. More details at the [sonobe/experimental-frontends](https://github.com/privacy-scaling-explorations/sonobe/tree/main/experimental-frontends) directory.
 
 Available features:
 - `parallel` enables some parallelization optimizations available in the crate. It is enabled by default.

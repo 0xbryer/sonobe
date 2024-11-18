@@ -3,7 +3,7 @@ members = [
     "folding-schemes",
     "solidity-verifiers",
     "cli",
-    "frontends"
+    "experimental-frontends"
 ]
 resolver = "2"
 
